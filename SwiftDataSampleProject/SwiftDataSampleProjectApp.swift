@@ -13,7 +13,7 @@ struct SwiftDataSampleProjectApp: App {
 
     let modelContainer = try! ModelContainer(
         for: Item.self,
-        ModelConfiguration(groupContainer: .none, cloudKitDatabase: .none)
+        configurations: ModelConfiguration(groupContainer: .none, cloudKitDatabase: .none)
     )
 
     var body: some Scene {
